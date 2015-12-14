@@ -1,3 +1,5 @@
+#if NEEDTEST
+
 #include <string>
 #include <cstdio>
 #include <cstring>
@@ -203,3 +205,6 @@ int main(int argc, char **argv) {
     std::string points_json = Json(points).dump();
     printf("%s\n", points_json.c_str());
 }
+
+#endif // NEEDTEST
+
